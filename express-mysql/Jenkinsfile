@@ -72,7 +72,7 @@ pipeline {
                           -Dsonar.tests=./${PROJECT_ROOT}/test"
                          
             }
-           
+           }
           }*/
       stage('Build docker-image') {
         steps {
@@ -86,7 +86,7 @@ pipeline {
           sh "docker push ${REGISTRY}:${BUILD_NUMBER}"
         }
       }
-      }
+      
      
     
   }

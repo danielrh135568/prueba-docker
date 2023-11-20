@@ -52,12 +52,12 @@ pipeline {
           sh "cd ${PROJECT_ROOT}; npm run coverage"
         }
       }
-      stage('scan') {
+      /*stage('scan') {
           environment {
             // Previously defined in the Jenkins "Global Tool Configuration"
             scannerHome = tool 'sonar-scanner'
           }
-          /*steps {
+          steps {
             // "sonarqube" is the server configured in "Configure System"
             withSonarQubeEnv('sonarqube') {
               // Execute the SonarQube scanner with desired flags

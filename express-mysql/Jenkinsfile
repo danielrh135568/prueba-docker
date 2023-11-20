@@ -69,7 +69,7 @@ pipeline {
                           -Dsonar.sources=./${PROJECT_ROOT}/app.js,./${PROJECT_ROOT}/config/db.config.js,./${PROJECT_ROOT}/routes/developers.js \
                           -Dsonar.login=admin \
                           -Dsonar.password=admin1 \
-                          -Dsonar.tests=./${PROJECT_ROOT}/test 
+                          -Dsonar.tests=./${PROJECT_ROOT}/test"
                          
             }
            
